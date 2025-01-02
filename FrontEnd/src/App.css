@@ -1,0 +1,13 @@
+#root {
+  display: grid;
+  grid-template-columns: 3em [breakout-start] 1fr [content-start] 1fr [content-end] 1fr [breakout-end] 3em;
+  grid-template-rows: 3em [margin-start] 1fr [margin-end] 3em;
+}
+#root > * {
+  grid-column: breakout;
+  grid-row: margin;
+}
+.drawer-container {
+  grid-column: breakout;
+  grid-row: margin;
+}
