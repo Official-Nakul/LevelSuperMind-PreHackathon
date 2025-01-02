@@ -29,9 +29,12 @@ function ChatSupport() {
     setChatHistory((prevHistory) => [...prevHistory, newMessage]);
 
     try {
-      const response = await axios.post("http://localhost:5000/api/chat", {
-        message,
-      });
+      const response = await axios.post(
+        "https://levelsupermind-backend.onrender.com/api/chat",
+        {
+          message,
+        }
+      );
 
       // Assuming response contains chatbot's reply in Markdown format
       const chatbotMessage =
