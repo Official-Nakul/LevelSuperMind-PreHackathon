@@ -1,4 +1,5 @@
-from flask import Flask, jsonify
+import os
+from flask import Flask
 from Graphs import generate_pie_chart, generate_bar_chart
 from flask_cors import CORS
 
@@ -20,4 +21,5 @@ def plotly_graph_bar():
     return bar_chart
 
 if __name__ == "__main__":
-    app.run()
+    port = int(os.environ.get("PORT", 5000))  # Render sets PORT
+    app.run(host='0.0.0.0', port=port)
