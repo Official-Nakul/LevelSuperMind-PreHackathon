@@ -1,0 +1,20 @@
+.graphs-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.graphs-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.graph {
+  flex: 1 1 calc(50% - 20px); /* Adjust to occupy 50% width with a gap */
+  min-width: 300px; /* Ensure minimum width for smaller screens */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+}

@@ -1,7 +1,7 @@
 #root {
   display: grid;
   grid-template-columns: 3em [breakout-start] 1fr [content-start] 1fr [content-end] 1fr [breakout-end] 3em;
-  grid-template-rows: 3em [margin-start] 1fr [margin-end] 3em;
+  grid-template-rows: 1.5em [margin-start] 1fr [margin-end] 1.5em;
 }
 #root > * {
   grid-column: breakout;
